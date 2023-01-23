@@ -25,11 +25,13 @@ public class BaseEntityManager implements BaseEntityService {
         this.baseEntityDao = baseEntityDao;
     }
 
+    // The process of listing all existing objects of the specified type
     @Override
     public List<BaseEntity> getAllList() {
         return this.baseEntityDao.getAllList();
     }
 
+    // Method that returns total prices
     @Override
     public long totalPrice() {
         double totalPrice = 0;
@@ -39,6 +41,7 @@ public class BaseEntityManager implements BaseEntityService {
         return (long) totalPrice;
     }
 
+    // Method that returns total prices for all types
     @Override
     public long getAllTotalPrice() {
         double getAllTotalPrice = 0;
@@ -55,6 +58,7 @@ public class BaseEntityManager implements BaseEntityService {
         return (long) getAllTotalPrice;
     }
 
+    // Method to return the average square meter
     @Override
     public double averageSquareMeter() {
         double averageSquareMeter = 0;
@@ -66,6 +70,7 @@ public class BaseEntityManager implements BaseEntityService {
         return averageSquareMeter / baseEntityDao.getAll().size();
     }
 
+    // Method to return the average square meter all types
     @Override
     public double getAllAverageSquareMeter() {
         double getAllAverageSquareMeter = 0;
@@ -84,6 +89,7 @@ public class BaseEntityManager implements BaseEntityService {
         return getAllAverageSquareMeter / totalEntity;
     }
 
+    // Filtering process according to the number of rooms by using the stream class
     @Override
     public List<BaseEntity> filterByRoom(int roomNumber) {
         List<BaseEntity> filterByRoomList = new LinkedList<>();
@@ -99,6 +105,7 @@ public class BaseEntityManager implements BaseEntityService {
         return filterByRoomList;
     }
 
+    // Filtering process according to the number of lounges by using the stream class
     @Override
     public List<BaseEntity> filterByLounge(int loungeNumber) {
         List<BaseEntity> filterByLoungeList = new LinkedList<>();

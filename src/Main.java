@@ -25,7 +25,7 @@ public class Main {
         // LISTS ALL THE HOUSES
         homeManager.getAllList();
         // RETURNS THE TOTAL PRICES OF ALL HOUSES
-        System.out.println(Message.TOTAL_PRICE_HOMES + homeManager.totalPrice() + Message.₺);
+        System.out.println(Message.TOTAL_PRICE_HOMES + homeManager.totalPrice() + Message.turkishCurrency);
         // THE AVERAGE SQUARE METER OF HOUSES
         System.out.println(Message.AVERAGE_SQUARE_METER + homeManager.averageSquareMeter() + Message.m2);
 
@@ -36,7 +36,7 @@ public class Main {
         // LISTS ALL THE VILLAS
         villaManager.getAllList();
         // RETURNS THE TOTAL PRICES OF ALL VILLAS
-        System.out.println(Message.TOTAL_PRICE_VILLAS + villaManager.totalPrice() + Message.₺);
+        System.out.println(Message.TOTAL_PRICE_VILLAS + villaManager.totalPrice() + Message.turkishCurrency);
         // RETURNS THE AVERAGE SQUARE METER OF VILLAS
         System.out.println(Message.AVERAGE_SQUARE_METER + villaManager.averageSquareMeter() + Message.m2);
 
@@ -47,7 +47,7 @@ public class Main {
         // LISTS ALL THE SUMMER HOUSES
         summerHouseManager.getAllList();
         // RETURNS THE TOTAL PRICES OF ALL SUMMER HOUSES
-        System.out.println(Message.TOTAL_PRICE_SUMMER_HOUSES + summerHouseManager.totalPrice() + Message.₺);
+        System.out.println(Message.TOTAL_PRICE_SUMMER_HOUSES + summerHouseManager.totalPrice() + Message.turkishCurrency);
         // RETURNS THE AVERAGE SQUARE METER OF SUMMER HOUSES
         System.out.println(Message.AVERAGE_SQUARE_METER + summerHouseManager.averageSquareMeter() + Message.m2);
 
@@ -55,7 +55,7 @@ public class Main {
 
         BaseEntityService allTypesManager = new BaseEntityManager(baseEntityDaoList);
         // RETURNS THE TOTAL PRICES OF ALL TYPES
-        System.out.println(Message.ALL_TYPES_TOTAL_PRICE + allTypesManager.getAllTotalPrice() + Message.₺);
+        System.out.println(Message.ALL_TYPES_TOTAL_PRICE + allTypesManager.getAllTotalPrice() + Message.turkishCurrency);
         // RETURNS THE AVERAGE SQUARE METER OF ALL TYPES
         System.out.println(Message.ALL_TYPES_AVERAGE_SQUARE_METER +allTypesManager.getAllAverageSquareMeter()+ Message.m2);
 

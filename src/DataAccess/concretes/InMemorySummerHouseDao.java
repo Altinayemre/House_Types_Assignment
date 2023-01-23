@@ -17,11 +17,13 @@ public class InMemorySummerHouseDao implements SummerHouseDao {
         summerHouseList.add(new SummerHouse(9, "summerHouseThree", 2250000, 120, 3, 1));
     }
 
+    // Used to hold objects
     @Override
     public List<BaseEntity> getAll() {
         return summerHouseList;
     }
 
+    // The listing process using the lambda expression
     @Override
     public List<BaseEntity> getAllList() {
         summerHouseList.forEach((summerHouse) -> System.out.println(summerHouse));

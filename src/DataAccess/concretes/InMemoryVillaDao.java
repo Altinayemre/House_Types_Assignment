@@ -18,11 +18,13 @@ public class InMemoryVillaDao implements VillaDao {
         villaList.add(new Villa(6, "villaThree", 9950000, 300, 5, 2));
     }
 
+    // Used to hold objects
     @Override
     public List<BaseEntity> getAll() {
         return villaList;
     }
 
+    // The listing process using the lambda expression
     @Override
     public List<BaseEntity> getAllList() {
         villaList.forEach((villa) -> System.out.println(villa));

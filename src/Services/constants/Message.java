@@ -12,6 +12,6 @@ public class Message {
     public static final String ALL_TYPES_AVERAGE_SQUARE_METER = "ALL_TYPES_AVERAGE_SQUARE_METER: ";
     public static final String FILTER_ALL_TYPES_BY_NUMBER_OF_ROOMS = "FILTER_ALL_TYPES_BY_NUMBER_OF_ROOMS";
     public static final String FILTER_ALL_TYPES_BY_NUMBER_OF_LOUNGE = "FILTER_ALL_TYPES_BY_NUMBER_OF_LOUNGE";
-    public static final String ₺ = " ₺";
+    public static final String turkishCurrency = " ₺";
     public static final String m2 = " m²";
 }
