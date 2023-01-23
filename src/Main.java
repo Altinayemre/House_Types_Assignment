@@ -2,15 +2,10 @@ import DataAccess.abstracts.BaseEntityDao;
 import DataAccess.concretes.InMemoryHomeDao;
 import DataAccess.concretes.InMemorySummerHouseDao;
 import DataAccess.concretes.InMemoryVillaDao;
-import Entites.BaseEntity;
-import Entites.Home;
-import Entites.SummerHouse;
-import Entites.Villa;
 import Services.abstracts.BaseEntityService;
 import Services.concretes.BaseEntityManager;
 import Services.constants.Message;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -57,7 +52,7 @@ public class Main {
         // RETURNS THE TOTAL PRICES OF ALL TYPES
         System.out.println(Message.ALL_TYPES_TOTAL_PRICE + allTypesManager.getAllTotalPrice() + Message.turkishCurrency);
         // RETURNS THE AVERAGE SQUARE METER OF ALL TYPES
-        System.out.println(Message.ALL_TYPES_AVERAGE_SQUARE_METER +allTypesManager.getAllAverageSquareMeter()+ Message.m2);
+        System.out.println(Message.ALL_TYPES_AVERAGE_SQUARE_METER + allTypesManager.getAllAverageSquareMeter() + Message.m2);
 
         System.out.println(" ");
 

@@ -1,6 +1,5 @@
 package Services.abstracts;
 
-import DataAccess.abstracts.BaseEntityDao;
 import Entites.BaseEntity;
 
 import java.util.List;

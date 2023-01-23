@@ -8,9 +8,7 @@ public class BaseEntity {
     private int numberOfRoom;
     private int numberOfLounge;
 
-    public BaseEntity() {
-
-    }
+    public BaseEntity() {}
 
     public BaseEntity(int id, String homeType, double price, int squareMeter, int numberOfRoom, int numberOfLounge) {
         this.id = id;

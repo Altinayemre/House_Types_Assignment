@@ -4,7 +4,6 @@ import DataAccess.abstracts.BaseEntityDao;
 import Entites.BaseEntity;
 import Services.abstracts.BaseEntityService;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,8 +13,7 @@ public class BaseEntityManager implements BaseEntityService {
 
     List<BaseEntityDao> baseEntityDaoList;
 
-    public BaseEntityManager() {
-    }
+    public BaseEntityManager() {}
 
     public BaseEntityManager(List<BaseEntityDao> baseEntityDaoList) {
         this.baseEntityDaoList = baseEntityDaoList;
@@ -116,7 +114,7 @@ public class BaseEntityManager implements BaseEntityService {
 
             filterByLoungeList = entityList.stream().filter((lounge) -> lounge.getNumberOfLounge() == loungeNumber).collect(Collectors.toList());
 
-            filterByLoungeList.forEach((lounge) -> System.out.println(lounge));
+            filterByLoungeList.forEach(System.out::println);
         }
 
         return filterByLoungeList;
